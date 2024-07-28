@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../../../../시관짱/styles/layouts.css">
+  <link rel="stylesheet" href="../../../../../시관짱/styles/common.css">
+  <link rel="stylesheet" href="../../../../../시관짱/styles/variable.css">
+  <link rel="stylesheet" href="../../../../../시관짱/styles/components.css">
+  <title>광고 정보</title>
+</head>
+
+<body>
+  <div class="admin-container">
+    <header>관리자 페이지에 오신 것을 환영합니다.</header>
+    <nav>
+      <ul class="nav-menu">
+        <li class="nav-menu_item"><a href="ad-new.html">광고등록</a></li>
+        <li class="nav-menu_item actived"><a href="ad-list.html">광고등록내역</a></li>
+        <li class="nav-menu_item"><a href="worker.html">인부정보</a></li>
+        <li class="nav-menu_item"><a href="sales.html">영업내역</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h1>광고 정보
+        <div class="buttons-group">
+          <button onclick="window.location.href='ad-list.html'">뒤로가기</button>
+        </div>
+      </h1>
+      <div class="card">
+        <form action="">
+          <div class="form-group">
+            <label for="ad-location">현장 위치</label>
+            <input type="text" id="ad-location" value="현장위치1" name="ad-location" placeholder="현장 위치를 입력해주세요." readonly>
+          </div>
+          <div class="form-group">
+            <label for="ad-kind">인부 종류</label>
+            <input name="ad-kind" id="ad-kind" value="인부종류1" placeholder="인부 종류를 입력해주세요."></input readonly>
+          </div>
+          <div class="form-group">
+            <label for="ad-persons">모집 인원</label>
+            <input type="text" id="ad-persons" value="모집인원1" name="ad-persons" readonly>
+          </div>
+          <div class="form-group">
+            <label for="ad-going-time">출근 시간</label>
+            <input type="time" id="ad-going-time" value="08:00" name="ad-going-time" readonly>
+          </div>
+          <div class="form-group">
+            <label for="ad-working-time">근무 시간</label>
+            <input type="time" id="ad-working-time" value="17:00" name="ad-working-time" readonly>
+          </div>
+          <div class="form-group">
+            <label for="ad-price">지급 금액</label>
+            <input type="number" id="ad-price" value="90000" name="ad-price" readonly>
+          </div>
+          <div class="buttons-group">
+            <button type="submit">등록</button>
+          </div>
+        </form>
+      </div>
+      <div class="card">
+        <h2>지원자 목록</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>번호</th>
+              <th>이름</th>
+              <th>나이</th>
+              <th>계좌번호</th>
+              <th>이수증여부</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody class="no-hover">
+            <tr>
+              <td>1</td>
+              <td>홍길동</td>
+              <td>32</td>
+              <td>0000-00-0000000</td>
+              <td>O</td>
+              <td>
+                <div class="buttons-group">
+                  <button>수락</button>
+                  <button>거절</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>홍길동</td>
+              <td>32</td>
+              <td>0000-00-0000000</td>
+              <td>O</td>
+              <td>
+                <div class="buttons-group">
+                  <button>수락</button>
+                  <button>거절</button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../../../../시관짱/styles/layouts.css">
+  <link rel="stylesheet" href="../../../../../시관짱/styles/common.css">
+  <link rel="stylesheet" href="../../../../../시관짱/styles/variable.css">
+  <link rel="stylesheet" href="../../../../../시관짱/styles/components.css">
+  <title>광고 등록</title>
+</head>
+
+<body>
+  <div class="admin-container">
+    <header>관리자 페이지에 오신 것을 환영합니다.</header>
+    <nav>
+      <ul class="nav-menu">
+        <li class="nav-menu_item actived"><a href="ad-new.html">광고등록</a></li>
+        <li class="nav-menu_item"><a href="ad-list.html">광고등록내역</a></li>
+        <li class="nav-menu_item"><a href="worker.html">인부정보</a></li>
+        <li class="nav-menu_item"><a href="sales.html">영업내역</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h1>광고 등록</h1>
+      <div class="card">
+        <form action="">
+          <div class="form-group">
+            <label for="ad-location">현장 위치</label>
+            <input type="text" id="ad-location" name="ad-location" placeholder="현장 위치를 입력해주세요.">
+          </div>
+          <div class="form-group">
+            <label for="ad-kind">인부 종류</label>
+            <input name="ad-kind" id="ad-kind" cols="30" rows="10" placeholder="인부 종류를 입력해주세요."></input>
+          </div>
+          <div class="form-group">
+            <label for="ad-persons">모집 인원</label>
+            <input type="text" id="ad-persons" name="ad-persons">
+          </div>
+          <div class="form-group">
+            <label for="ad-going-time">출근 시간</label>
+            <input type="time" id="ad-going-time" name="ad-going-time">
+          </div>
+          <div class="form-group">
+            <label for="ad-working-time">근무 시간</label>
+            <input type="time" id="ad-working-time" name="ad-working-time">
+          </div>
+          <div class="form-group">
+            <label for="ad-price">지급 금액</label>
+            <input type="text" id="ad-price" name="ad-price">
+          </div>
+          <div class="buttons-group">
+            <button type="submit">등록</button>
+          </div>
+
+        </form>
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>
